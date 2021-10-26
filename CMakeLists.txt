@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(SqlQuery
+project(sql_query
     VERSION 0.0.1
     DESCRIPTION "SQL query generator"
     LANGUAGES CXX)
 
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+   
+    set(CMAKE_CXX_STANDARD 17)
+    set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
     set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
